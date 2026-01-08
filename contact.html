@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ModernShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ModernShop.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Shop</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="cart.html" class="nav-link">Cart</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." id="nav-search">
+                </div>
+                <div class="cart-icon-container" onclick="window.location.href='cart.html'">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gray-100 py-4 mb-4" style="background-color: #f3f4f6; padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 class="section-title" style="margin-bottom: 1rem;">Contact Us</h1>
+            <p style="max-width: 600px; margin: 0 auto; color: var(--text-light);">Have questions? We'd love to hear
+                from you.</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="container" style="margin-bottom: 4rem;">
+        <div class="flex" style="gap: 4rem; flex-wrap: wrap;">
+
+            <!-- Contact Info -->
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Get in Touch</h2>
+                <div class="mb-4 flex items-center" style="gap: 1rem;">
+                    <div
+                        style="width: 50px; height: 50px; background: var(--bg-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.25rem;">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; font-weight: 600;">Email</h3>
+                        <p style="color: var(--text-light);">support@modernshop.com</p>
+                    </div>
+                </div>
+                <div class="mb-4 flex items-center" style="gap: 1rem;">
+                    <div
+                        style="width: 50px; height: 50px; background: var(--bg-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.25rem;">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; font-weight: 600;">Phone</h3>
+                        <p style="color: var(--text-light);">+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="mb-4 flex items-center" style="gap: 1rem;">
+                    <div
+                        style="width: 50px; height: 50px; background: var(--bg-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.25rem;">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; font-weight: 600;">Location</h3>
+                        <p style="color: var(--text-light);">123 Tech Street, Silicon Valley, CA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div
+                style="flex: 1.5; min-width: 300px; background: white; padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);">
+                <form onsubmit="event.preventDefault(); alert('Message Sent!'); this.reset();">
+                    <div class="mb-4">
+                        <label class="block mb-2 text-sm font-medium">Name</label>
+                        <input type="text" placeholder="Your Name" required
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 0.375rem;">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2 text-sm font-medium">Email</label>
+                        <input type="email" placeholder="Your Email" required
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 0.375rem;">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2 text-sm font-medium">Subject</label>
+                        <input type="text" placeholder="Subject" required
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 0.375rem;">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2 text-sm font-medium">Message</label>
+                        <textarea rows="5" placeholder="How can we help?" required
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 0.375rem; font-family: inherit;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ModernShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

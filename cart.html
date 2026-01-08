@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | ModernShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ModernShop.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Shop</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="cart.html" class="nav-link">Cart</a></li>
+
+            </ul>
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." id="nav-search">
+                </div>
+                <div class="cart-icon-container" onclick="window.location.href='cart.html'">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="container mt-4">
+        <h1 class="section-title">Shopping Cart</h1>
+    </div>
+
+    <!-- Cart Content -->
+    <div class="container flex" style="gap: 2rem; margin-bottom: 4rem; align-items: flex-start; flex-wrap: wrap;">
+
+        <!-- Cart Items List -->
+        <div class="cart-items" id="cart-items-container" style="flex: 2; min-width: 300px;">
+            <!-- Injected by JS -->
+            <p>Loading cart...</p>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="card summary-card"
+            style="flex: 1; min-width: 280px; background: white; padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+            <h2
+                style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+                Order Summary</h2>
+
+            <div class="flex justify-between mb-4">
+                <span style="color: var(--text-light);">Subtotal</span>
+                <span id="subtotal-price" style="font-weight: 600;">$0.00</span>
+            </div>
+            <div class="flex justify-between mb-4">
+                <span style="color: var(--text-light);">Shipping</span>
+                <span style="font-weight: 600;">Free</span>
+            </div>
+            <div class="flex justify-between mb-4"
+                style="font-size: 1.25rem; font-weight: 700; color: var(--text-color);">
+                <span>Total</span>
+                <span id="total-price">$0.00</span>
+            </div>
+
+            <!-- Coupon UI -->
+            <div class="mb-4" style="margin-top: 2rem;">
+                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.875rem;">Discount Code</label>
+                <div class="flex">
+                    <input type="text" placeholder="Enter coupon"
+                        style="flex: 1; padding: 0.5rem; border: 1px solid var(--border-color); border-radius: 0.25rem 0 0 0.25rem; border-right: none;">
+                    <button class="btn btn-primary"
+                        style="border-top-left-radius: 0; border-bottom-left-radius: 0; padding: 0.5rem 1rem;">Apply</button>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;"
+                onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+            <a href="products.html" class="text-center"
+                style="display: block; margin-top: 1rem; color: var(--text-light); font-size: 0.875rem;">Continue
+                Shopping</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ModernShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

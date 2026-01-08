@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="ModernShop — Premium electronics, headphones, gadgets & accessories with fast shipping and secure payments." />
+    <title>ModernShop | Premium Electronics</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- FontAwesome -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Skip link (accessibility) -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span><i class="fa-solid fa-truck-fast"></i> Free shipping over $50</span>
+            <span><i class="fa-solid fa-shield-halved"></i> Secure checkout</span>
+            <span><i class="fa-solid fa-arrow-rotate-left"></i> 30-day returns</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Primary navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="ModernShop Home">ModernShop.</a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="products.html" class="nav-link">Shop</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="cart.html" class="nav-link">Cart</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <form class="search-bar" role="search" aria-label="Site search" onsubmit="event.preventDefault();">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search products..." id="nav-search" aria-label="Search products" />
+                </form>
+
+                <button class="icon-btn cart-icon-container" aria-label="Open cart"
+                    onclick="window.location.href='cart.html'">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+
+                <button class="icon-btn mobile-menu-btn" id="menuBtn" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="container hero-content">
+                <span class="pill">New Arrivals 2024</span>
+
+                <h1>Experience the Future <br /> of Technology</h1>
+                <p>
+                    Premium headphones, gadgets, and accessories designed to elevate your lifestyle.
+                    Shop curated tech that looks great and performs better.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="products.html" class="btn btn-light">Shop Now</a>
+                    <a href="#trending" class="btn btn-outline">Explore</a>
+                </div>
+
+                <div class="hero-metrics" aria-label="Store highlights">
+                    <div class="metric">
+                        <strong>10K+</strong>
+                        <span>Happy Customers</span>
+                    </div>
+                    <div class="metric">
+                        <strong>4.8★</strong>
+                        <span>Average Rating</span>
+                    </div>
+                    <div class="metric">
+                        <strong>24/7</strong>
+                        <span>Support</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Benefits -->
+        <section class="container section">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fa-solid fa-truck-fast benefit-icon"></i>
+                    <h3 class="benefit-title">Free Shipping</h3>
+                    <p class="benefit-desc">On all orders over $50. Global delivery available.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fa-solid fa-shield-halved benefit-icon"></i>
+                    <h3 class="benefit-title">Secure Payment</h3>
+                    <p class="benefit-desc">256-bit encryption. Trusted payment partners.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fa-solid fa-headset benefit-icon"></i>
+                    <h3 class="benefit-title">24/7 Support</h3>
+                    <p class="benefit-desc">Friendly expert support whenever you need it.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fa-solid fa-arrow-rotate-left benefit-icon"></i>
+                    <h3 class="benefit-title">30-Day Returns</h3>
+                    <p class="benefit-desc">Easy returns within 30 days.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories (helps homepage look premium) -->
+        <section class="container section">
+            <div class="section-head">
+                <h2 class="section-title">Shop by Category</h2>
+                <a class="link" href="products.html">Browse all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="category-grid">
+                <a class="category-card" href="products.html?cat=headphones">
+                    <div class="category-icon"><i class="fa-solid fa-headphones"></i></div>
+                    <h3>Headphones</h3>
+                    <p>Noise-cancel, wireless & studio</p>
+                </a>
+
+                <a class="category-card" href="products.html?cat=gadgets">
+                    <div class="category-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Gadgets</h3>
+                    <p>Smart devices & essentials</p>
+                </a>
+
+                <a class="category-card" href="products.html?cat=accessories">
+                    <div class="category-icon"><i class="fa-solid fa-plug"></i></div>
+                    <h3>Accessories</h3>
+                    <p>Cables, cases, chargers</p>
+                </a>
+
+                <a class="category-card" href="products.html?cat=wearables">
+                    <div class="category-icon"><i class="fa-solid fa-watch-smart"></i></div>
+                    <h3>Wearables</h3>
+                    <p>Fitness + lifestyle tech</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="container section" id="trending">
+            <div class="section-head">
+                <h2 class="section-title">Trending This Week</h2>
+                <a class="link" href="products.html">View all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="product-grid" id="featured-products-grid" aria-live="polite">
+                <!-- Products injected by JS -->
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="products.html" class="btn btn-outline">View All Products</a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="container section">
+            <div class="section-head">
+                <h2 class="section-title">What Customers Say</h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>“Super fast delivery and premium quality. The headphones feel like luxury.”</p>
+                    <div class="testimonial-user">
+                        <strong>Anu</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>“Clean website, easy checkout, and support was quick. I’ll buy again!”</p>
+                    <div class="testimonial-user">
+                        <strong>Rahul</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>“The return process was smooth. Really trustworthy store.”</p>
+                    <div class="testimonial-user">
+                        <strong>Meena</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="container section">
+            <div class="newsletter">
+                <h2>Stay in the Loop</h2>
+                <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input" required />
+                    <button type="submit" class="btn btn-dark">Subscribe</button>
+                </form>
+
+                <small class="muted">No spam. Unsubscribe anytime.</small>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo footer-logo">ModernShop.</a>
+                    <p>Premium electronics and accessories. Quality you can trust.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="#trending">Trending</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 ModernShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content" role="document">
+            <button class="close-modal" id="close-modal" aria-label="Close modal">&times;</button>
+
+            <img src="" alt="Product" class="modal-image" id="modal-img" />
+
+            <div class="modal-details">
+                <h2 id="modal-title">Product Name</h2>
+
+                <div class="product-rating" id="modal-rating" aria-label="Product rating">
+                    <!-- stars injected -->
+                </div>
+
+                <p id="modal-price" class="modal-price">$0.00</p>
+                <p id="modal-desc" class="modal-desc">Description goes here...</p>
+
+                <div class="quantity-selector" aria-label="Quantity selector">
+                    <button class="qty-btn" type="button" onclick="updateModalQty(-1)">-</button>
+                    <input type="text" value="1" class="qty-input" id="modal-qty" readonly />
+                    <button class="qty-btn" type="button" onclick="updateModalQty(1)">+</button>
+                </div>
+
+                <button class="btn btn-primary" id="modal-add-btn" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+
+    <!-- Small mobile menu toggle -->
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+        menuBtn?.addEventListener("click", () => navLinks.classList.toggle("open"));
+    </script>
+</body>
+
+</html>
